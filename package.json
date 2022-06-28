@@ -1,0 +1,31 @@
+{
+  "name": "@theqrl/qrllib-browserify",
+  "version": "1.0.0",
+  "description": "browserified qrllib",
+  "main": "index.js",
+  "author": "Dr JP Lomas <jp@theqrl.org> (https://theqrl.org/)",
+  "scripts": {
+    "build": "browserify -p esmify src/index.js -o dist/qrllib.js",
+    "test": "npm run build && http-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theqrl/qrllib-browserify.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "qrllib": "^1.2.4"
+  },
+  "files": [
+    "/dist/qrllib.js"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/register": "^7.18.6",
+    "browserify": "^17.0.0",
+    "esmify": "^2.1.1",
+    "http-server": "^14.1.1"
+  }
+}
