@@ -1,4 +1,4 @@
-import { QRLLIBmodule } from "qrllib/build/offline-libjsqrl.js";
+import QRLLIB from "qrllib/build/offline-libjsqrl.js";
 
 const waitForQRLLIB = (callBack) => {
   setTimeout(() => {
@@ -13,10 +13,9 @@ const waitForQRLLIB = (callBack) => {
   }, 50);
 };
 
-async function makeWindow() {
-  await QRLLIBmodule;
+function makeWindow() {
   waitForQRLLIB(() => {
-    console.log('QRLLIB v1.2.4 loaded');
+    console.log('QRLLIB v1.2.6 loaded');
     window.QRLLIB = QRLLIB;
   });
 }
