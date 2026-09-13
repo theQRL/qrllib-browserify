@@ -17,7 +17,7 @@
     "node": "^22.18.0 || >=24.11.0"
   },
   "dependencies": {
-    "qrllib": "1.2.6"
+    "qrllib": "1.2.7"
   },
   "files": [
     "/dist/qrllib.js"
