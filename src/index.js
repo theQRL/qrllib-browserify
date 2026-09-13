@@ -15,7 +15,7 @@ const waitForQRLLIB = (callBack) => {
 
 function makeWindow() {
   waitForQRLLIB(() => {
-    console.log('QRLLIB v1.2.6 loaded');
+    console.log('QRLLIB v1.2.7 loaded');
     window.QRLLIB = QRLLIB;
   });
 }
